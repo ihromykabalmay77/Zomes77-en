@@ -279,10 +279,9 @@ input[type=color]::-moz-color-swatch{border:none;border-radius:3px}
 .export-btn .text{font-size:.72rem;font-weight:600;color:var(--fg2)}
 .export-btn:hover .text{color:var(--fg)}
 
-/* ── SCROLLBAR ── */
-.sidebar::-webkit-scrollbar{width:5px}
-.sidebar::-webkit-scrollbar-track{background:transparent}
-.sidebar::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
+/* ── SCROLLBAR (hidden, scroll tetap jalan) ── */
+*{scrollbar-width:none!important}
+*::-webkit-scrollbar{display:none!important}
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
